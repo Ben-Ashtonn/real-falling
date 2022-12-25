@@ -1,26 +1,48 @@
-<body>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Falling.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="http://fonts.gstatic.com" />
+    <link
+      hrel="https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+  </head>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyB_5ehV8FcYWSeL87fLnWfZb3-kQCNpYUw",
-    authDomain: "falling-96fdd.firebaseapp.com",
-    databaseURL: "https://falling-96fdd-default-rtdb.firebaseio.com",
-    projectId: "falling-96fdd",
-    storageBucket: "falling-96fdd.appspot.com",
-    messagingSenderId: "16969937285",
-    appId: "1:16969937285:web:7227b229e282866263d4ec",
-    measurementId: "G-CBY6596LCG"
-  };
-
-  // Initialize Firebase
+  <body>
+    <script
+      scr="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+    ></script>
+    <script
+      scr="https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"
+    ></script>
+    <script
+      scr="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"
+    ></script>
+    <script
+      scr="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+    ></script>
+    <script
+      scr="https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js"
+    ></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyB_5ehV8FcYWSeL87fLnWfZb3-kQCNpYUw",
+        authDomain: "falling-96fdd.firebaseapp.com",
+        databaseURL: "https://falling-96fdd-default-rtdb.firebaseio.com",
+        projectId: "falling-96fdd",
+        storageBucket: "falling-96fdd.appspot.com",
+        messagingSenderId: "16969937285",
+        appId: "1:16969937285:web:7227b229e282866263d4ec",
+        measurementId: "G-CBY6596LCG",
+      };
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-</script>
-<body>
+    </script>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
